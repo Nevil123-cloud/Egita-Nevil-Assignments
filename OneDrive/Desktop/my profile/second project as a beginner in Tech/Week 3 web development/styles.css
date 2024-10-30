@@ -1,0 +1,138 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: #4e1094d6;
+    color: white;
+    padding: 20px 0;
+}
+
+header img {
+    width: 700px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(183, 171, 171);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main layout */
+.container {
+    display: flex;
+    margin-top: 20px;
+    background-color: aqua;
+}
+
+main {
+    flex: 3;
+    padding: 20px;
+    background-color: aqua;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #f68282;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #b8a0a0;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 668px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        display: none;
+    }
+
+    nav:after {
+        content: "☰";
+        color: white;
+        font-size: 30px;
+        display: block;
+        text-align: center;
+    }
+
+    /* Navigation menu toggle (hamburger menu) */
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        order: 2;
+    }
+
+    main {
+        order: 1;
+    }
+}

@@ -1,0 +1,25 @@
+body{
+    background-color: rgba(55, 211, 216, 0.442);
+    color: rgb(65, 41, 41);
+    border: bold;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    margin-right: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: auto;
+    text-align: left;
+    animation: infinite;
+}
+.p{ font-size: medium;
+    margin: auto;
+    color: rgb(98, 11, 180);
+    text-shadow: 5;
+    
+}
+.a{
+    color: rgba(219, 125, 24, 0.807); text-shadow: 3;
+}
+.t{
+    color: rgb(199, 37, 37); text-shadow: 5;
+}
